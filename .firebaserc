@@ -1,8 +1,6 @@
 {
   "projects": {
-    "default": "<your_project_id>",
-    "dev": "<your_project_id>",
-    "staging": "<your_project_id_staging>",
-    "production": "<your_project_id_production>"
+    "default": "darkroom-tools",
+    "dev": "darkroom-tools"
   }
 }

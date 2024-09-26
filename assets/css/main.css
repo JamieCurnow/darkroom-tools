@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Brown';
+  src: url('/assets/fonts/Brown/Brown-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('/assets/fonts/Brown/Brown-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('/assets/fonts/Brown/Brown-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('/assets/fonts/Brown/Brown-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brown';
+  src: url('/assets/fonts/Brown/Brown-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Brown', sans-serif;
+}
+
+/* headings are brown */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Brown', sans-serif;
+}

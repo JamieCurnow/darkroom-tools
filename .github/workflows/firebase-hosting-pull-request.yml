@@ -34,17 +34,11 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Create .npmrc file
-        run: sed -i -- 's/${NPM_TOKEN}/'"$NPM_TOKEN"'/g' .npmrc
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_DEV }}'
-          projectId: properplan-dev
+          projectId: darkroom-tools
         env:
           FIREBASE_CLI_EXPERIMENTS: webframeworks,pintags
-          DOPPLER_SERVICE_TOKEN: ${{ secrets.DOPPLER_SERVICE_TOKEN_DEV }}
           ENV: dev

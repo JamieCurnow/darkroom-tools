@@ -1,5 +1,8 @@
 <template>
-  <div>
-    <AuthTest />
-  </div>
+ <template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
+
 </template>
