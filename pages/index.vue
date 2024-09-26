@@ -7,7 +7,7 @@
 
     <!-- top bar -->
     <div class="z-50 fixed top-0 left-0 w-screen flex justify-between py-4 px-4">
-      <button class="bg-gray-700 text-gray-500 px-4 rounded-md">Set offset</button>
+      <button class="bg-gray-700 text-gray-500 px-4 rounded-md" @click="setOffset">Set offset</button>
       <button @click="showMenu = !showMenu">
         <UIcon name="i-mdi-settings" class="text-gray-700 size-8"></UIcon>
       </button>
@@ -16,7 +16,7 @@
     <div class="h-screen flex w-screen bg-black text-white justify-center items-center">
       <div class="flex flex-col gap-2 w-screen text-center">
         <h1 class="text-[4rem] text-gray-500">{{ displayText }}</h1>
-        <div class="text-[2rem] text-gray-700">{{ seconds }} seconds</div>
+        <div class="text-[2.5rem] text-gray-500">{{ seconds }} seconds</div>
       </div>
     </div>
 
